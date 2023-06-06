@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Get today's date  in yyy-mm-dd format
-date=$("date +%Y-%m-%d")
+# Get today's date in yyyy-mm-dd format
+date=$(date +"%Y-%m-%d")
 
 # Print the strings on separate lines
 echo "one"
@@ -10,9 +10,10 @@ echo "three"
 echo "four"
 echo "five"
 
-# create the text file
+# Create the text file
 filename="${date}-file.txt"
 echo -e "one\ntwo\nthree\nfour\nfive" > "$filename"
 
-#Print the filename
+# Print the filename
 echo "File created: $filename"
+
