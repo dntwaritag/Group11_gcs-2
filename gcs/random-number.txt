@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#User Input
+read -p "Type a phrase: " phrase
+
+#Calculate number of words
+word_count=$(echo "$phrase" | wc -w)
+
+#Calculate the whitespace characters
+whitespace_count=$(echo "$phrase" | tr -cd ' ' | wc -c)
+
+# Display final result
+echo "The number of words is $word_count"
+echo "The number of white spaces is $whitespace_count"
+
