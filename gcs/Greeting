@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Prompt the user for their name
+read -p "Enter your name: " name
+
+# Prompt the user for their age
+read -p "Enter your age: " age
+
+# Greet the user with a customized message
+echo "Hello, $name! You are $age years old."
